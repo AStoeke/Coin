@@ -1,0 +1,31 @@
+import java.util.Random;
+
+public class Coin
+{
+   Random rand = new Random();
+   private int x;
+   
+   public Coin() {
+       flip();
+   }
+   
+   public int flip() {
+       x = rand.nextInt(2);
+       return x;
+   }
+   
+   public boolean side() {
+       if(x != 0 && x != 1) {
+           return true;
+       }
+       else
+       return false;
+   }
+   
+   public String toString() {
+       if(x == 0)
+        return "Heads";
+       else
+        return "Tails";
+   }
+}
