@@ -1,0 +1,14 @@
+public class Flip
+{
+   public static void main (String[] args)
+   {
+       Coin coin = new Coin();
+       
+       for(int x = 1; x <= 10; x++)
+       {
+           System.out.println(coin);
+           System.out.println(coin.side());
+           coin.flip();
+       }
+   }
+}
